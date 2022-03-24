@@ -1,5 +1,5 @@
 {
-  "name": "@mia-platform/vuerd",
+  "name": "vuerd",
   "version": "2.2.11",
   "description": "ERD editor",
   "main": "dist/vuerd.js",
