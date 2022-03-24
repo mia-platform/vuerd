@@ -1,5 +1,5 @@
 {
-  "name": "vuerd-vscode",
+  "name": "@mia-platform/vuerd-vscode",
   "version": "0.9.15",
   "displayName": "ERD Editor",
   "description": "ERD Editor vscode extension",
