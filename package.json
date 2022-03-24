@@ -1,5 +1,5 @@
 {
-  "name": "@mia-platform/monorepo",
+  "name": "@mia-platform/vuerd-monorepo",
   "private": true,
   "workspaces": [
     "packages/*"
