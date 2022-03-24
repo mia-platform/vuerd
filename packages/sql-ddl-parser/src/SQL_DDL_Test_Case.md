@@ -272,6 +272,40 @@ CREATE TABLE 'a' (
 }
 ```
 
+### Square Brackets
+
+```sql
+CREATE TABLE [a] (
+ [b] bigint
+)
+```
+
+```json
+{
+  "statements": [
+    {
+      "type": "create.table",
+      "name": "a",
+      "comment": "",
+      "columns": [
+        {
+          "name": "b",
+          "dataType": "bigint",
+          "default": "",
+          "comment": "",
+          "primaryKey": false,
+          "autoIncrement": false,
+          "unique": false,
+          "nullable": true
+        }
+      ],
+      "indexes": [],
+      "foreignKeys": []
+    }
+  ]
+}
+```
+
 ### Backtick
 
 ```sql
