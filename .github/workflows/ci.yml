@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [master, dev, main]
+    branches: [master, dev, main, mia-platform-npm-registry]
   pull_request:
-    branches: [master, dev, main]
+    branches: [master, dev, main, mia-platform-npm-registry]
 
 jobs:
   test:
