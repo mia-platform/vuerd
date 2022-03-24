@@ -1,6 +1,7 @@
 {
   "name": "@mia-platform/vuerd-monorepo",
   "private": true,
+  "version": "2.2.11",
   "workspaces": [
     "packages/*"
   ],
