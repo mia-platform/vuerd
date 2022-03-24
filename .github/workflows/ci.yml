@@ -42,9 +42,8 @@ jobs:
     if: ${{ startsWith(github.ref, 'refs/tags/') }}
     steps:
       - uses: actions/checkout@v2
-      - name: Change directory to sql-ddl-parser package
-        run: cd packages/sql-ddl-parser
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: 'public'
+          package: './packages/sql-ddl-parser/package.json'
