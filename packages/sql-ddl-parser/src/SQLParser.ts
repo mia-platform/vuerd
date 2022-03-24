@@ -141,6 +141,23 @@ export function tokenizer(input: string): Token[] {
       continue;
     }
 
+    if (char === tokenMatch.leftSquareBracket) {
+      let value = '';
+
+      char = input[++current];
+
+      while (char !== tokenMatch.rightSquareBracket) {
+        value += char;
+        char = input[++current];
+      }
+
+      char = input[++current];
+
+      tokens.push({ type: 'squareBracketString', value });
+
+      continue;
+    }
+
     if (tokenMatch.string.test(char)) {
       let value = '';
 

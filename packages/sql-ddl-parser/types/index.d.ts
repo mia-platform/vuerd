@@ -12,6 +12,7 @@ export type TokenType =
   | 'doubleQuoteString'
   | 'singleQuoteString'
   | 'backtickString'
+  | 'squareBracketString'
   | 'unknown';
 
 export interface Token {

@@ -21,6 +21,8 @@ export const tokenMatch = {
   whiteSpace: /(?:\s+|#.*|-- +.*|\/\*(?:[\s\S])*?\*\/)+/,
   leftParen: '(',
   rightParen: ')',
+  leftSquareBracket: '[',
+  rightSquareBracket: ']',
   comma: ',',
   period: '.',
   equal: '=',
@@ -73,7 +75,8 @@ export function isExtraString(token?: Token): boolean {
   return (
     token.type === 'doubleQuoteString' ||
     token.type === 'singleQuoteString' ||
-    token.type === 'backtickString'
+    token.type === 'backtickString' ||
+    token.type === 'squareBracketString'
   );
 }
 
