@@ -1,7 +1,7 @@
 {
   "name": "monorepo",
   "private": true,
-  "version": "v2.2.11.sql-ddl-parser-0.2.7",
+  "version": "2.2.11.sql-ddl-parser-0.2.7",
   "workspaces": [
     "packages/*"
   ],
